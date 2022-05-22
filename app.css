@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+
+}
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: blanchedalmond;
+}
+
+header div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    width: 80%;
+}
+
+
+    
+header input{
+    width: 60%;
+}
+
+.btn{
+    padding: .2rem;
+    width: 5rem;
+}
+main {
+    display: flex;
+    background-image: url(https://www.teahub.io/photos/full/27-270872_fluid-wallpaper-4k.jpg);
+    height: 85vh;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.taskArea{
+    width: 85%;
+    background-color: antiquewhite;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+ }
+footer {
+    background-color: antiquewhite;
+}
+
+.taskArea{
+    overflow-x:auto;
+}
+thead{
+    background: black;
+    color: aliceblue;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  td{
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+  .itemList{ 
+    width:15rem;
+    border-bottom:.3rem solid rgb(4, 4, 4);
+    height:auto;
+    overflow-y: scroll;
+    min-height: fit-content;
+    max-height: 3rem;
+
+  }
+
+  .itemList:hover{
+      background-color: yellowgreen;
+  }
+
+  @media screen and (min-width: 768px) {
+    header div{
+        width: 30%;
+    }
+    .taskArea{
+        width: 70%;
+        padding: 10px 20px 10px 20px;
+     }
+     .taskArea{
+        width: 40%;
+        background-color: antiquewhite;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     .itemList{ 
+        width:32rem;
+     }
+}
